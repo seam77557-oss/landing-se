@@ -16,119 +16,123 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
   return (
     <CustomModal open={open} onOpenChange={onOpenChange}>
       <CustomModalHeader>
-        <CustomModalTitle>Privacy Policy</CustomModalTitle>
+        <CustomModalTitle>Privacy Policy – SEAM LLC</CustomModalTitle>
       </CustomModalHeader>
-      
+
       <CustomModalBody>
         <div className="space-y-6 text-sm text-gray-600">
+
           <section>
             <h3 className="text-gray-900 font-medium mb-2">1. Introduction</h3>
             <p>
-              Swiss Enigma Asset Management ("Company," "we," "us," or "our") is committed to protecting your privacy 
-              and personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your 
-              information in accordance with Swiss data protection laws and the General Data Protection Regulation (GDPR).
+              SEAM LLC ("Company", "we", "our", or "us") is committed to protecting your personal information. This
+              Privacy Policy explains how we collect, store, use, and safeguard your data when you use our services.
             </p>
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">2. Information We Collect</h3>
-            <p className="mb-2">We may collect the following types of information:</p>
-            <ul className="list-disc list-inside space-y-1 ml-2">
-              <li>Personal identification information (name, email, phone number)</li>
-              <li>Financial information relevant to investment services</li>
-              <li>Professional and employment information</li>
-              <li>Communications and correspondence with our team</li>
-              <li>Technical data (IP address, browser type, device information)</li>
+            <h3 className="text-gray-900 font-medium mb-2">2. Company Information</h3>
+            <ul className="list-disc ml-6">
+              <li>Registered Name: SEAM LLC</li>
+              <li>Jurisdiction: St. Vincent & the Grenadines</li>
+              <li>Registered Office: St. Vincent & the Grenadines</li>
             </ul>
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">3. How We Use Your Information</h3>
-            <p className="mb-2">Your information is used to:</p>
-            <ul className="list-disc list-inside space-y-1 ml-2">
-              <li>Evaluate and process your access request</li>
-              <li>Provide personalized wealth management services</li>
-              <li>Comply with legal and regulatory obligations</li>
-              <li>Communicate important updates and information</li>
-              <li>Improve our services and client experience</li>
+            <h3 className="text-gray-900 font-medium mb-2">3. Information We Collect</h3>
+            <p className="font-medium">A. Personal Information</p>
+            <ul className="list-disc ml-6 mb-2">
+              <li>Full Name</li>
+              <li>Email Address</li>
+              <li>Phone Number</li>
+              <li>Date of Birth</li>
+              <li>Residential Address</li>
             </ul>
-          </section>
-
-          <section>
-            <h3 className="text-gray-900 font-medium mb-2">4. Data Protection & Security</h3>
-            <p>
-              We employ industry-leading security measures to protect your personal data, including encryption, 
-              secure servers, and strict access controls. Our systems are regularly audited to ensure compliance 
-              with the highest security standards. We adhere to Swiss banking secrecy principles and maintain 
-              absolute discretion regarding all client information.
-            </p>
-          </section>
-
-          <section>
-            <h3 className="text-gray-900 font-medium mb-2">5. Data Sharing & Disclosure</h3>
-            <p>
-              We do not sell, trade, or rent your personal information to third parties. We may share your data 
-              only with trusted service providers who assist in our operations, subject to strict confidentiality 
-              agreements, or when required by law or regulatory authorities.
-            </p>
-          </section>
-
-          <section>
-            <h3 className="text-gray-900 font-medium mb-2">6. Data Retention</h3>
-            <p>
-              We retain your personal data only for as long as necessary to fulfill the purposes outlined in this 
-              policy, or as required by applicable laws and regulations. Upon termination of our relationship, 
-              we will securely delete or anonymize your data in accordance with our retention policies.
-            </p>
-          </section>
-
-          <section>
-            <h3 className="text-gray-900 font-medium mb-2">7. Your Rights</h3>
-            <p className="mb-2">Under applicable data protection laws, you have the right to:</p>
-            <ul className="list-disc list-inside space-y-1 ml-2">
-              <li>Access your personal data</li>
-              <li>Request correction of inaccurate data</li>
-              <li>Request deletion of your data</li>
-              <li>Object to or restrict processing</li>
-              <li>Data portability</li>
-              <li>Withdraw consent at any time</li>
+            <p className="font-medium">B. Financial Information</p>
+            <ul className="list-disc ml-6 mb-2">
+              <li>Declared income range</li>
+              <li>Investment amount</li>
+              <li>Cryptocurrency wallet information</li>
             </ul>
+            <p>We do not collect cookies, IP address data, analytics, or browsing behavior.</p>
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">8. Cookies & Tracking</h3>
+            <h3 className="text-gray-900 font-medium mb-2">4. How We Use Your Information</h3>
+            <p>Your data is used strictly for:</p>
+            <ul className="list-disc ml-6">
+              <li>Client onboarding and verification</li>
+              <li>Assessing investment suitability and profile evaluation</li>
+              <li>Sending in-app / platform notifications</li>
+              <li>Improving our service delivery and user experience</li>
+            </ul>
+            <p>We do not use your data for advertising, tracking, or external marketing.</p>
+          </section>
+
+          <section>
+            <h3 className="text-gray-900 font-medium mb-2">5. Data Sharing</h3>
             <p>
-              Our website may use cookies and similar technologies to enhance your browsing experience. 
-              You can manage your cookie preferences through your browser settings. Essential cookies 
-              required for website functionality cannot be disabled.
+              SEAM LLC does not share your personal or financial information with any external third parties. All
+              processing is conducted internally.
             </p>
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">9. International Transfers</h3>
+            <h3 className="text-gray-900 font-medium mb-2">6. Data Storage</h3>
             <p>
-              Your data may be transferred to and processed in Switzerland and other jurisdictions where 
-              we operate. We ensure appropriate safeguards are in place for any international data transfers 
-              in compliance with applicable data protection laws.
+              All user data is stored securely on internal secure servers, protected through strict access control and
+              encryption measures.
             </p>
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">10. Contact Us</h3>
+            <h3 className="text-gray-900 font-medium mb-2">7. Data Retention</h3>
             <p>
-              For any questions or concerns regarding this Privacy Policy or your personal data, please contact 
-              our Data Protection Officer through our official channels or speak with your relationship manager.
+              We retain your personal information as long as your account remains active. Upon account closure, data is
+              deleted upon verified user request.
             </p>
           </section>
 
-          <p className="text-xs text-gray-400 pt-4 border-t border-gray-200">
-            Last updated: January 2025
-          </p>
+          <section>
+            <h3 className="text-gray-900 font-medium mb-2">8. User Rights</h3>
+            <p>You have the absolute right to:</p>
+            <ul className="list-disc ml-6">
+              <li>Request deletion of your personal information</li>
+            </ul>
+            <p>Requests can be made via support@seamassetmanagement.com.</p>
+          </section>
+
+          <section>
+            <h3 className="text-gray-900 font-medium mb-2">9. Communication Consent</h3>
+            <p>By using the platform, you consent to receiving:</p>
+            <ul className="list-disc ml-6">
+              <li>In-app / platform notifications only</li>
+            </ul>
+            <p>
+              We do not send promotional emails, WhatsApp messages, or SMS unless explicitly enabled in the future.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-gray-900 font-medium mb-2">10. Security Measures</h3>
+            <p>
+              We implement robust internal security protocols to safeguard your data, including restricted access,
+              encryption, and secure storage systems.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-gray-900 font-medium mb-2">11. Contact Information</h3>
+            <p>Email: support@seamasset.com</p>
+          </section>
+
+          <p className="text-xs text-gray-400 pt-4 border-t border-gray-200">Last updated: January 2025</p>
         </div>
       </CustomModalBody>
 
       <CustomModalFooter>
-        <Button 
+        <Button
           onClick={() => onOpenChange(false)}
           className="w-full bg-gray-900 text-white hover:bg-gray-800"
         >
