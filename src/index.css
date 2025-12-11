@@ -322,14 +322,9 @@
     @apply max-w-full;
   }
 
-  /* Aggressive performance optimizations */
+  /* Performance optimizations - removed transform to fix modal stacking */
   * {
-    /* Disable hover effects during scroll */
     pointer-events: auto;
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
   }
   
   /* Premium focus states with glow */
