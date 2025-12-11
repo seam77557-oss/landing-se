@@ -16,14 +16,14 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
   return (
     <CustomModal open={open} onOpenChange={onOpenChange}>
       <CustomModalHeader>
-        <CustomModalTitle>Privacy Policy – SEAM LLC</CustomModalTitle>
+        <CustomModalTitle className="text-xl font-semibold text-gray-900">Privacy Policy – SEAM LLC</CustomModalTitle>
       </CustomModalHeader>
 
       <CustomModalBody>
-        <div className="space-y-6 text-sm text-gray-600">
+        <div className="space-y-8 text-base leading-relaxed text-gray-700">
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">1. Introduction</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Introduction</h3>
             <p>
               SEAM LLC ("Company", "we", "our", or "us") is committed to protecting your personal information. This
               Privacy Policy explains how we collect, store, use, and safeguard your data when you use our services.
@@ -31,7 +31,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">2. Company Information</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Company Information</h3>
             <ul className="list-disc ml-6">
               <li>Registered Name: SEAM LLC</li>
               <li>Jurisdiction: St. Vincent & the Grenadines</li>
@@ -40,8 +40,8 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">3. Information We Collect</h3>
-            <p className="font-medium">A. Personal Information</p>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Information We Collect</h3>
+            <p className="font-semibold">A. Personal Information</p>
             <ul className="list-disc ml-6 mb-2">
               <li>Full Name</li>
               <li>Email Address</li>
@@ -49,7 +49,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
               <li>Date of Birth</li>
               <li>Residential Address</li>
             </ul>
-            <p className="font-medium">B. Financial Information</p>
+            <p className="font-semibold">B. Financial Information</p>
             <ul className="list-disc ml-6 mb-2">
               <li>Declared income range</li>
               <li>Investment amount</li>
@@ -59,7 +59,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">4. How We Use Your Information</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">How We Use Your Information</h3>
             <p>Your data is used strictly for:</p>
             <ul className="list-disc ml-6">
               <li>Client onboarding and verification</li>
@@ -71,7 +71,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">5. Data Sharing</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Data Sharing</h3>
             <p>
               SEAM LLC does not share your personal or financial information with any external third parties. All
               processing is conducted internally.
@@ -79,7 +79,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">6. Data Storage</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Data Storage</h3>
             <p>
               All user data is stored securely on internal secure servers, protected through strict access control and
               encryption measures.
@@ -87,7 +87,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">7. Data Retention</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Data Retention</h3>
             <p>
               We retain your personal information as long as your account remains active. Upon account closure, data is
               deleted upon verified user request.
@@ -95,7 +95,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">8. User Rights</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">User Rights</h3>
             <p>You have the absolute right to:</p>
             <ul className="list-disc ml-6">
               <li>Request deletion of your personal information</li>
@@ -104,7 +104,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">9. Communication Consent</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Communication Consent</h3>
             <p>By using the platform, you consent to receiving:</p>
             <ul className="list-disc ml-6">
               <li>In-app / platform notifications only</li>
@@ -115,7 +115,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">10. Security Measures</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Security Measures</h3>
             <p>
               We implement robust internal security protocols to safeguard your data, including restricted access,
               encryption, and secure storage systems.
@@ -123,7 +123,7 @@ const PrivacyPolicyModal = ({ open, onOpenChange }: PrivacyPolicyModalProps) => 
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">11. Contact Information</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Contact Information</h3>
             <p>Email: support@seamasset.com</p>
           </section>
 

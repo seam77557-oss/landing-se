@@ -16,21 +16,21 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
   return (
     <CustomModal open={open} onOpenChange={onOpenChange}>
       <CustomModalHeader>
-        <CustomModalTitle>Terms & Conditions – SEAM LLC</CustomModalTitle>
+        <CustomModalTitle className="text-xl font-semibold text-gray-900">Terms & Conditions – SEAM LLC</CustomModalTitle>
       </CustomModalHeader>
 
       <CustomModalBody>
-        <div className="space-y-6 text-sm text-gray-600">
+        <div className="space-y-8 text-base text-gray-700">
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">1. Introduction</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Introduction</h3>
             <p>
               These Terms & Conditions ("Terms") govern your access to and use of services provided by SEAM LLC. By creating an account or using our services, you agree to comply with these Terms.
             </p>
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">2. Eligibility</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Eligibility</h3>
             <p>To use our services, you must:</p>
             <ul className="list-disc ml-6">
               <li>Be 18 years or older</li>
@@ -40,7 +40,7 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">3. Nature of Services</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Nature of Services</h3>
             <ul className="list-disc ml-6">
               <li>Asset Management & Portfolio Management</li>
               <li>Investment Advisory</li>
@@ -51,7 +51,7 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">4. Investment Disclaimer</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Investment Disclaimer</h3>
             <p>By investing with SEAM LLC, you acknowledge:</p>
             <ul className="list-disc ml-6">
               <li>Returns are market-dependent</li>
@@ -62,13 +62,13 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">5. Deposits & Withdrawals</h3>
-            <p className="font-medium">Deposits</p>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Deposits & Withdrawals</h3>
+            <p className="font-semibold">Deposits</p>
             <ul className="list-disc ml-6 mb-2">
               <li>Accepted only via cryptocurrency</li>
               <li>Minimum investment amount: USD 1,000</li>
             </ul>
-            <p className="font-medium">Withdrawals</p>
+            <p className="font-semibold">Withdrawals</p>
             <ul className="list-disc ml-6">
               <li>Processed within 30 business days</li>
               <li>Subject to internal verification and security protocols</li>
@@ -76,7 +76,7 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">6. Client Obligations</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Client Obligations</h3>
             <ul className="list-disc ml-6">
               <li>Provide accurate and truthful information</li>
               <li>Avoid fraudulent, suspicious, or abusive activities</li>
@@ -86,7 +86,7 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">7. Limitation of Liability</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Limitation of Liability</h3>
             <p>SEAM LLC is not liable for:</p>
             <ul className="list-disc ml-6">
               <li>Losses arising from market fluctuations</li>
@@ -97,7 +97,7 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">8. Account Termination</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Account Termination</h3>
             <p>SEAM LLC reserves the right to terminate or suspend an account due to:</p>
             <ul className="list-disc ml-6">
               <li>Prolonged inactivity</li>
@@ -107,14 +107,14 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">9. Governing Law</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Governing Law</h3>
             <p>
               These Terms are governed by the laws of St. Vincent & the Grenadines. Any disputes shall fall under the exclusive jurisdiction of its courts.
             </p>
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">10. Referral Program</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Referral Program</h3>
             <p>If clients participate in the referral program:</p>
             <ul className="list-disc ml-6">
               <li>They must follow all rules, eligibility conditions, and guidelines published</li>
@@ -123,7 +123,7 @@ const TermsOfServiceModal = ({ open, onOpenChange }: TermsOfServiceModalProps) =
           </section>
 
           <section>
-            <h3 className="text-gray-900 font-medium mb-2">11. Contact Information</h3>
+            <h3 className="text-gray-900 font-semibold text-xl mb-3">Contact Information</h3>
             <p>Email: support@seamasset.com</p>
           </section>
 
