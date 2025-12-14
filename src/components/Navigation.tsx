@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import logoLight from "@/assets/logo-light.png";
 
 interface NavigationProps {
-  onAccessClick?: () => void;
+  accessUrl?: string;
 }
 
-const Navigation = ({ onAccessClick }: NavigationProps = {}) => {
+const Navigation = ({ accessUrl = "https://www.seamasset.com" }: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -67,11 +67,11 @@ const Navigation = ({ onAccessClick }: NavigationProps = {}) => {
 
             <div className="hidden lg:flex items-center gap-4">
               <Button 
-                onClick={onAccessClick}
+                asChild
                 size="sm" 
                 className="bg-primary hover:bg-primary/90 font-body tracking-wider text-white"
               >
-                Request Access
+                <a href={accessUrl} target="_blank" rel="noopener noreferrer">Request Access</a>
               </Button>
             </div>
 
@@ -101,10 +101,11 @@ const Navigation = ({ onAccessClick }: NavigationProps = {}) => {
               ))}
               <div className="pt-4">
                 <Button 
-                  onClick={() => { setIsMobileMenuOpen(false); onAccessClick?.(); }}
+                  asChild
                   className="w-full bg-primary hover:bg-primary/90 font-body tracking-wider text-white"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Request Access
+                  <a href={accessUrl} target="_blank" rel="noopener noreferrer">Request Access</a>
                 </Button>
               </div>
             </div>

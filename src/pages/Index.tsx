@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 import { Shield, Lock, Crown, ChevronDown, Eye, Target, Award, Globe, CheckCircle2, TrendingUp, Users, Calendar, FileText, ShieldCheck, Globe2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { PrivateAccessModal } from "@/components/PrivateAccessModal";
 import { PhilosophyCard } from "@/components/PhilosophyCard";
 import { ProcessStep } from "@/components/ProcessStep";
 import { TrustBadge } from "@/components/TrustBadge";
@@ -13,8 +11,9 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 import heroImage from "@/assets/hero-swiss-alps.jpg";
 import boardroomImage from "@/assets/corporate-boardroom.jpg";
 
+const ACCESS_URL = "https://www.seamasset.com";
+
 const Index = () => {
-  const [modalOpen, setModalOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -23,7 +22,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation onAccessClick={() => setModalOpen(true)} />
+      <Navigation accessUrl={ACCESS_URL} />
       
       {/* HERO SECTION */}
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -63,11 +62,11 @@ const Index = () => {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8 px-4"
           >
             <Button 
-              onClick={() => setModalOpen(true)}
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-white font-body tracking-wider shadow-lg hover:shadow-primary/20 transition-all w-full sm:w-auto px-6 sm:px-8"
             >
-              Request Private Access
+              <a href={ACCESS_URL} target="_blank" rel="noopener noreferrer">Request Private Access</a>
             </Button>
           </motion.div>
           
@@ -174,9 +173,10 @@ const Index = () => {
                 <img 
                   src={boardroomImage} 
                   alt="Alpine Capital Partners" 
-                  className="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover grayscale opacity-70 dark:opacity-70 transition-all duration-500 group-hover:scale-105 group-hover:opacity-80"
+                  style={{borderRadius:"20px",}}
+                  className="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover  opacity-90 dark:opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-80"
                 />
-                <div className="absolute inset-0 border border-border group-hover:border-primary/30 transition-colors" />
+                <div className="absolute inset-0 group-hover:border-primary/30 transition-colors" />
               </motion.div>
             </Parallax>
           </div>
@@ -238,12 +238,14 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <Button 
-              onClick={() => setModalOpen(true)}
+              asChild
               variant="link" 
               className="text-primary hover:text-primary/80 text-base tracking-wider group"
             >
-              Request Access 
-              <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+              <a href={ACCESS_URL} target="_blank" rel="noopener noreferrer">
+                Request Access 
+                <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+              </a>
             </Button>
           </div>
         </div>
@@ -319,11 +321,11 @@ const Index = () => {
             </div>
             
             <Button 
-              onClick={() => setModalOpen(true)}
+              asChild
               size="lg" 
               className="bg-primary hover:bg-primary/90 tracking-wider text-white shadow-lg hover:shadow-primary/30 transition-all"
             >
-              Request Access
+              <a href={ACCESS_URL} target="_blank" rel="noopener noreferrer">Request Access</a>
             </Button>
           </motion.div>
         </div>
@@ -530,12 +532,14 @@ const Index = () => {
 
             <div className="mb-8">
               <Button 
-                onClick={() => setModalOpen(true)}
+                asChild
                 size="xl" 
                 className="bg-primary hover:bg-primary/90 tracking-wider text-white shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-all relative group"
               >
-                <span className="relative z-10">Submit Application</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                <a href={ACCESS_URL} target="_blank" rel="noopener noreferrer">
+                  <span className="relative z-10">Submit Application</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                </a>
               </Button>
             </div>
             
@@ -548,7 +552,7 @@ const Index = () => {
 
       <Footer />
       
-      <PrivateAccessModal open={modalOpen} onOpenChange={setModalOpen} />
+      
     </div>
   );
 };
