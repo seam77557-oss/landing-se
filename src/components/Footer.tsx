@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="border-t border-border py-6 sm:py-8">
           <div className="text-center space-y-2 px-4">
             <p className="text-muted-foreground text-[10px] sm:text-xs">
-              © 2025 Swiss Enigma Asset Management. All rights reserved.
+              © 2026 Swiss Enigma Asset Management. All rights reserved.
             </p>
             <p className="text-muted-foreground/70 text-[10px] sm:text-xs max-w-3xl mx-auto leading-relaxed">
               This site is for informational purposes only. Submission does not constitute an offer. 
